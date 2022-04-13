@@ -1,0 +1,60 @@
+:root {
+    
+/** 
+* * Basic Comment
+* ! Urgent
+*/
+
+/**
+* ! Colors(primary)
+*/
+  --darkBlue1: hsl(217, 28%, 15%); //(intro and email sign up background)
+  --darkBlue2: hsl(218, 28%, 13%); //(main background)
+  --darkBlue3: hsl(216, 53%, 9%); //(footer background)
+  --darkBlue4: hsl(219, 30%, 18%);//(testimonials background)
+/**
+* ! Colors(accent)
+*/
+  --Cyan: hsl(176, 68%, 64%); //(inside call-to-action gradient)
+  --Blue: hsl(198, 60%, 50%); //(inside call-to-action gradient)
+  --lightRed: hsl(0,100%, 63%); //(error)
+
+/** 
+* *Overview
+* !Font Family
+* *Primary="Raleway"
+* *Secondary="Open Sans"
+*/
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+
+  // Raleway
+  --fs-base: 0.875rem;
+  --fs-sm: 0.571rem;
+  --fs-lg: 0.857em;
+  --fs-2xl: 1.285rem;
+  --fs-3xl: 1.714rem;
+  --fs-4xl: 2.5rem;
+
+  // Open Sans
+  --fs-md: 0.714rem;
+  --fs-base: 0.875em;
+  --fs-xl: 1.143rem;
+  
+/** 
+* !Line Heigt
+*/
+  // Line Height
+  --lh-base: 0.714rem;
+  --lh-sm: 0.857rem;
+  --lh-md: 1.29rem;
+  --lh-lg: 1.5rem;
+  --lh-xl: 1.7rem;
+  --lh-2xl: 2.57rem;
+
+/** 
+* !Spacer
+*/
+
+  --spacer: 1.71rem 1.43rem 4.57rem 1.43rem
+}

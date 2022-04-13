@@ -1,0 +1,620 @@
+/**
+* TODO: Add flex property for header class
+* !FooterIcons
+*/
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  
+    &__facebook {
+      width: 2rem;
+      height: 2rem;
+      border: solid 1px hsl(223, 100%, 88%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+  
+    &__twitter {
+      width: 2rem;
+      height: 2rem;
+      border: solid 1px hsl(223, 100%, 88%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+  
+    &__twitter:hover {
+  
+      @media (min-width:40em){
+          color: var(--Cyan);
+          border-color: var(--Cyan);
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+      } 
+      
+    }
+    &__instagram {
+      width: 2rem;
+      height: 2rem;
+      border: solid 1px hsl(223, 100%, 88%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+  
+  .icons :nth-of-type(2):hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Flex Properties
+  */
+  
+  .flex {
+    display: flex;
+  
+    &-jc-sb {
+      justify-content: space-between;
+    }
+    &-jc-c {
+      justify-content: center;
+    }
+    &-ac-c {
+      align-self: center;
+    }
+    
+  
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !ul/li reset
+  */
+  ul[class],
+  ol[class] {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Header Query 
+  */
+  
+  .header {
+    @media(min-width: 80em) {
+      margin-bottom: 5.4rem;
+      max-width: 1280px;
+      height: 52px;
+      margin-right: auto;
+      margin-left: auto;
+      
+    }
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Main
+  */
+  
+  @media (min-width: 40em) {
+    .content {
+      margin: 0;
+      padding: 0;
+    }
+    
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Contents
+  */
+  
+  .content {
+    .btn_1 {
+      @media (min-width: 40em) {
+        width: 280px;
+        height: 56px;
+        margin-bottom: 11.3rem;
+        
+      }
+    }
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Intro Query 
+  */
+  
+  .intro {
+  @media(min-width: 40em) {
+    &__heading >h1 {
+      min-width: 734px;
+      font-size: var(--fs-4xl);
+      line-height: 60px;
+      margin-bottom: 2.2rem
+    }
+  
+    &__snippet {
+      @media (min-width: 32em) {
+        max-width: 413px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 21px;
+      } 
+    }
+  }
+  }
+  
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Main_Card
+  */
+  .main_card {
+    @media(min-width: 40em) {
+      width: 880px;
+      height: 507px;
+      margin-bottom: 9.8rem;
+    }
+  
+    .card_access {
+      @media(min-width: 40em) {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1rem;
+        width: 349px;
+        height: 214px;
+      }
+    }
+  
+    @media(min-width: 40em) {
+      .card_access__icon {
+        margin-bottom: 16px;
+      }
+      .__img {
+        width: 84px;
+        height: 78px;
+      }
+      .card_access h3 {
+        font-size: 20px;
+        margin-bottom: 0.57rem;
+      }
+      .card_access p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    
+    .card_security {
+      @media(min-width: 40em) {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1rem;
+        width: 384px;
+        height: 215px;
+      }
+    }
+  
+    @media(min-width: 40em) {
+      .card_security__icon {
+        margin-bottom: 16px;
+      }
+      .__img {
+        width: 66px;
+        height: 84px;
+      }
+      .card_security__snippet {
+        padding: 0rem 9px;
+      }
+      .card_security h3 {
+        font-size: 20px;
+        margin-bottom: 0.57rem;
+      }
+      .card_security p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  
+    .card_collaboration {
+      @media(min-width: 40em) {
+        margin-right: auto;
+        margin-left: auto;
+        width: 363px;
+        height: 214px;
+      }
+    }
+  
+    @media(min-width: 40em) {
+      .card_collaboration__icon {
+        margin-bottom: 16px;
+      }
+      .__img {
+        width: 84px;
+        height: 69px;
+      }
+      .card_collaboration h3 {
+        font-size: 20px;
+        margin-bottom: 0.57rem;
+      }
+      .card_collaboration p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    
+    
+    .card_Any_File {
+      @media(min-width: 40em) {
+        margin-right: auto;
+        margin-left: auto;
+        width: 363px;
+        height: 214px;
+      }
+    }
+  
+    @media(min-width: 40em) {
+      .card_Any_File__icon {
+        margin-bottom: 16px;
+      }
+      .__img {
+        width: 90px;
+        height: 63px;
+      }
+      .card_Any_File h3 {
+        font-size: 20px;
+        margin-bottom: 0.57rem;
+      }
+      .card_Any_File p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+   
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !CTA
+  */
+  .cta {
+    @media(min-width: 40em) {
+      &__hero {
+        width: 614.76px;
+        height: 463.63px;
+        margin-left: 105px;
+      }
+      &__header h4 {
+        width: 329px;
+        font-size: 40px;
+        font-family: var(--primary);
+        line-height: 50px;
+        text-align: left;
+        margin-bottom: 1.4rem;
+      }
+      &__snippet p {
+        text-align: left;
+      }
+      &__link {
+        text-align: left;
+      }
+      &__contents {
+        width: 563px;
+        height: 282px;
+        margin-right: 100px;
+      }
+    }
+  }
+  
+  
+  
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Form
+  */
+  
+  @media(min-width: 57em){
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-control {
+      width: 873px;
+      height: 275px;
+      position: relative;  
+    }
+  
+    .cta {
+      &__form_header h5 {
+        font-size: 32px;
+        line-height: 48px;
+      }
+      &__form_snippet {
+        font-size: 14px;
+        line-height: 21px;
+        width: 637px;
+      }
+      &__spilt_form {
+        display: flex;
+        flex-direction: row;
+        height:48px;
+      }
+    }
+  
+    .input-control {
+      width: 480px;
+      margin-right: 29px;
+      margin-bottom: 5px;
+      
+    }
+  
+    .btn_2 {
+      width: 200px;
+    }
+    .input-control small {
+      display: inline;
+      color: rgb(255, 78, 78);
+      font-family: var(--secondary);
+      font-size: 10px;
+      font-weight: 700;
+      visibility: hidden;
+      position: relative;
+      bottom: 8%;
+      right: 70%;  
+    }
+    .input-control.error small {
+      color: rgb(255, 78, 78);
+      visibility: visible;
+      position: absolute;  
+    } 
+  }
+  
+  
+  
+
+
+
+
+/**
+* TODO: Add flex property for header class
+* !Grids
+*/
+
+/**
+* TODO: Add flex property for header class
+* !Main_card
+*/
+@media(min-width: 30em){
+    .main_card {
+      display: grid;
+      gap: 3rem 1rem;
+    }
+    .main_card {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    }
+    
+    .card_access {
+        grid-column: 1 / 2;
+    }
+    .card_security {
+        grid-column: 2 / 3;
+        align-self: center;
+    }
+    .card_collaboration {
+        grid-column: 1 / 2;
+    }
+    .card_Any_File {
+        grid-column: 2 / -2;
+    }
+    
+    
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !CTA
+  */
+  @media(min-width: 42em){
+    .cta {
+      display: grid;
+      margin-bottom: 120px;
+     &__hero {
+       margin-bottom: 0rem;
+       margin-right: 57.24px;
+     }
+    }
+  
+    .cta {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 3rem;
+    }
+    
+    .__hero {
+        grid-column: 1 / 2;
+    }
+    .__contents {
+        grid-column: 2 / 3;
+        align-self: center;
+    } 
+  }
+  @media(max-width:40em){
+    .cta {
+      display: inline;
+    }
+    
+  }
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Quotes
+  */
+  
+  @media(min-width: 57em){
+    .quotes {
+      display: grid;
+    }
+    .quotes__heading .name {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.25rem;
+    }
+    .quotes__heading .description {
+      font-size: 8px;
+      line-height: 10px;
+      
+    }
+    .testimonials {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-right: 120px;
+      margin-left: 120px;
+      
+    }
+    .break {
+      width: 360px;
+      height: 200px
+    }
+    .break p {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.5px;
+    }
+    .quotes {
+      grid-template-columns: 1fr 1fr 1fr;
+      max-height: 259px;
+    }
+    .split1 {
+      grid-column: 1 / 2;
+      margin-bottom: 0rem;
+      
+    }
+    .split2 {
+      grid-column: 2 / 3;
+      margin-bottom: 0rem;
+    }
+    .split3 {
+      grid-column: 3 / 4;
+    }
+  }
+  
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Footer
+  */
+  
+  @media(min-width: 90em){
+    .footer {
+      display: grid;
+      width: 100%;
+    }
+    .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    }
+    .footer {
+      min-height: 441px;
+      text-align: left;
+      padding: 12rem 14rem 3.7rem 8.5rem;
+      &__contact {
+        display: inline;
+        width:379px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: left;
+        margin-right: 80px;
+      }
+      &__contact-grid {
+        grid-column: 2 / 3;
+        margin-right: 120px;
+      }
+    }
+    .links__internal {
+      grid-column: 3 / 4;
+      margin-right: 80px;
+      width: 69px;
+    }
+    .links__external {
+      grid-column: 4 / 5;
+      width: 87px;
+      margin-right: 108px;
+    }
+    .links__external a:nth-of-type(1):hover {
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.7s ease-in-out;
+    }
+    .icons  {
+      display: inline;
+      grid-column: 5 / 6;
+      width: 140px;
+    }
+    .__facebook {
+      margin-right: 11.35px;
+    }
+    .__twitter {
+      margin-right: 11.71px;
+    }
+  }
+ 
+ 
+  @media(min-width:90em) {
+    .footer {
+      .location p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &__contact_number p {
+        font-size: 14px;
+        line-height: 14px;
+      }
+      &__contact_email p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &__internal a {
+        font-size: 16px;
+        
+      }
+      &__external a {
+        font-size: 16px;
+        
+      }
+      &.location img {
+        width: 13px;
+        height: 18px;
+      }
+      &__contact_number img {
+        width: 18px;
+        height: 18px;
+      }
+      &__contact_email img {
+        width: 20px;
+        height: 16px;
+      }
+    }
+  }
