@@ -112,7 +112,7 @@ body {
   padding: 0;
   background-color: var(--darkBlue2);
   color: white;
-  background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
+  background-image: url(../images/bg-curvy-mobile.svg);
   background-size: 50%;
   background-image: var(--darkBlue1);
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@ body {
 }
 @media (min-width: 40em) {
   body {
-    background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
+    background-image: url(../images/bg-curvy-desktop.svg);
     background-size: 50%;
     background-image: var(--darkBlue1);
     background-repeat: no-repeat;
@@ -200,7 +200,7 @@ body {
 }
 
 .hero {
-  background-image: url(../fylo-dark-theme-landing-page-master/images/illustration-intro.png);
+  background-image: url(../images/illustration-intro.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -309,7 +309,7 @@ body {
   margin-bottom: 11.43rem;
 }
 .cta__hero {
-  background-image: url(../fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png);
+  background-image: url(../images/illustration-stay-productive.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
