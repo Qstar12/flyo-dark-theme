@@ -117,6 +117,7 @@ body {
   background-image: var(--darkBlue1);
   background-repeat: no-repeat;
   background-position: center center;
+  height: 100vh;
 }
 @media (min-width: 40em) {
   body {
@@ -312,7 +313,17 @@ body {
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-bottom: 11.43rem;
+}
+.cta__contents {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 173px;
+}
+@media (min-width: 40em) {
+  .cta__contents {
+    max-width: 100%;
+  }
 }
 .cta__hero {
   background-image: url(../images/illustration-stay-productive.png);
@@ -408,6 +419,7 @@ body {
 */
 .container {
   padding: 0rem 1.25rem;
+  transform: translate(0%, 50%);
 }
 
 /**
@@ -421,7 +433,6 @@ body {
   justify-content: center;
   background-color: var(--darkBlue1);
   border: none;
-  transform: translate(0%, 50%);
   border-radius: 9px;
   padding: 2.8rem 2rem 2.6rem 2rem;
 }
@@ -483,9 +494,9 @@ body {
 * !Footer
 */
 .footer {
-  position: absolute;
-  z-index: -1;
-  padding: 18.5rem 2rem 3.7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 18.5rem 2rem 0rem 2rem;
   background-color: var(--darkBlue3);
   width: 100%;
   height: auto;
@@ -541,6 +552,9 @@ body {
   margin-left: 1.9rem;
   float: right;
 }
+.footer .icons {
+  margin-bottom: 52px;
+}
 
 /**
 * TODO: Add flex property for header class
@@ -563,6 +577,7 @@ body {
 .links__external {
   display: flex;
   flex-direction: column;
+  margin-bottom: 56px;
 }
 .links__external > a {
   font-family: var(--ff-secondary);
@@ -683,6 +698,7 @@ ol[class] {
   .content {
     margin: 0;
     padding: 0;
+    max-width: 100%;
   }
 }
 /**
@@ -840,11 +856,13 @@ ol[class] {
 * TODO: Add flex property for header class
 * !CTA
 */
+.cta {
+  width: 100%;
+}
 @media (min-width: 40em) {
   .cta__hero {
     width: 614.76px;
     height: 463.63px;
-    margin-left: 105px;
   }
   .cta__header h4 {
     width: 329px;
@@ -857,6 +875,9 @@ ol[class] {
   .cta__snippet p {
     text-align: left;
   }
+  .cta__snippet {
+    width: 563px;
+  }
   .cta__link {
     text-align: left;
   }
@@ -864,6 +885,7 @@ ol[class] {
     width: 563px;
     height: 282px;
     margin-right: 100px;
+    margin-top: 115px;
   }
 }
 
@@ -876,6 +898,7 @@ ol[class] {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   .form-control {
@@ -975,10 +998,11 @@ ol[class] {
   .cta__hero {
     margin-bottom: 0rem;
     margin-right: 57.24px;
+    margin-left: 100px;
   }
 
   .cta {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     text-align: center;
     gap: 3rem;
   }
@@ -1002,8 +1026,9 @@ ol[class] {
 * !Quotes
 */
 @media (min-width: 57em) {
-  .quotes {
-    display: grid;
+  .quotes li {
+    height: 200px;
+    width: 360px;
   }
 
   .quotes__heading .name {
@@ -1024,6 +1049,8 @@ ol[class] {
     justify-content: center;
     margin-right: 120px;
     margin-left: 120px;
+    margin-bottom: 120px;
+    width: 1180px;
   }
 
   .break {
@@ -1038,13 +1065,26 @@ ol[class] {
   }
 
   .quotes {
+    display: grid;
+  }
+
+  .quotes {
     grid-template-columns: 1fr 1fr 1fr;
     max-height: 259px;
+  }
+
+  .quotes__quote {
+    max-width: 309.3px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
   }
 
   .split1 {
     grid-column: 1/2;
     margin-bottom: 0rem;
+    margin-right: 40px;
   }
 
   .split2 {
@@ -1072,7 +1112,11 @@ ol[class] {
   }
 
   .footer {
-    min-height: 441px;
+    position: absolute;
+    z-index: -1;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
     text-align: left;
     padding: 12rem 14rem 3.7rem 8.5rem;
   }
@@ -1122,6 +1166,10 @@ ol[class] {
   }
 }
 @media (min-width: 90em) {
+  .footer .logo {
+    height: 31px;
+    margin-bottom: 52px;
+  }
   .footer .location p {
     font-size: 16px;
     line-height: 24px;
@@ -1199,11 +1247,11 @@ li {
   justify-content: center;
   margin-bottom: 1.71rem;
   height: 160px;
-  padding: 1.43rem;
 }
 
 li:nth-last-of-type(1) {
   margin-bottom: 0;
+  margin-right: 0;
 }
 
 ul {
@@ -1214,18 +1262,17 @@ form {
   min-width: 280px;
 }
 
-footer {
-  height: 974px;
-}
-
 blockquote {
   background: var(--darkBlue4);
   text-align: left;
-  margin: auto;
   padding: var(--spacer);
   border-radius: 3.93px;
-  margin: 0 auto;
   height: 160px;
+}
+@media (min-width: 57em) {
+  blockquote {
+    height: 200px;
+  }
 }
 
 ul[class],

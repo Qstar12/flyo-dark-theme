@@ -77,6 +77,7 @@ body {
   background-image: var(--darkBlue1);
   background-repeat: no-repeat;
   background-position: center center;
+  height: 100vh;
   @media(min-width: 40em) {
     background-image: url(../images/bg-curvy-desktop.svg);
     background-size: 50%;
@@ -292,7 +293,16 @@ body {
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-bottom: 11.43rem;
+  
+  &__contents {
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 173px;
+    @media(min-width: 40em) {
+      max-width: 100%;
+    }
+  }
   &__hero {
     background-image: url(../images/illustration-stay-productive.png);
     background-size: contain;
@@ -397,6 +407,7 @@ body {
 */
 .container { 
   padding: 0rem 1.25rem; 
+  transform: translate(0%, 50%);
 }
 
 
@@ -412,7 +423,6 @@ body {
   justify-content: center;
   background-color: var(--darkBlue1);
   border: none;
-  transform: translate(0%, 50%);
   border-radius: 9px;
   padding: 2.8rem 2rem 2.6rem 2rem;
   
@@ -482,12 +492,13 @@ body {
 */
 
 .footer {
-  position: absolute;
-  z-index: -1;
-  padding: 18.5rem 2rem 3.7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 18.5rem 2rem 0rem 2rem;
   background-color: var(--darkBlue3);
   width: 100%;
   height: auto;
+  
   
   &__logo {
     width: 108px;
@@ -551,6 +562,9 @@ body {
     margin-left: 1.9rem;
     float: right;
   }
+  .icons {
+    margin-bottom: 52px;
+  }
 }
 
 
@@ -577,6 +591,7 @@ body {
   &__external {
     display:flex;
     flex-direction: column;
+    margin-bottom: 56px;
   }
   &__external > a {
     font-family: var(--ff-secondary);
@@ -584,5 +599,7 @@ body {
     margin-bottom: 16px;
     color: white;
   }
+
+  
 }
 

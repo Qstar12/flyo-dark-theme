@@ -40,14 +40,12 @@ li {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.71rem;
-    height: 160px;
-    padding: 1.43rem;
-
-    
+    height: 160px;  
 }
 
 li:nth-last-of-type(1) {
     margin-bottom: 0;
+    margin-right: 0;
 }
 ul {
     height: 537px;
@@ -55,6 +53,4 @@ ul {
 form {
     min-width: 280px;
 }
-footer {
-    height: 974px;
-}
+
