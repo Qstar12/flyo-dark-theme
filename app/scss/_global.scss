@@ -83,6 +83,7 @@ body {
     background-image: var(--darkBlue1);
     background-repeat: no-repeat;
     background-position: center center;
+    height: 100vh;
   }
  
 }
@@ -187,7 +188,10 @@ body {
       margin-bottom: 2.57rem;
     }
 }
-
+.hero .photo1 {
+  text-indent: -9999px;
+  display: none;
+}
 .intro {
   display: flex;
   flex-direction: column;
@@ -297,7 +301,10 @@ body {
     height:229.27px;
     margin-bottom: 2rem;
   }
-
+  &__hero .photo2 {
+  text-indent: -9999px;
+  display: none;
+}
   &__snippet > p:last-child {
     margin-bottom: 1.14rem;
   }
